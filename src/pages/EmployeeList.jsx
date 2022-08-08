@@ -9,10 +9,17 @@ import {
   useGetAllEmployeesQuery,
 } from "../services/Api";
 import { Link, useNavigate } from "react-router-dom";
+import DeleteDialogueBox from "../components/DeleteDialogueBox";
+import { useState } from "react";
 
 const EmployeeList = () => {
   const { data } = useGetAllEmployeesQuery();
   const [deleteEmployeeByID] = useDeleteEmployeeMutation();
+
+  const [dialogue, setDialogue] = useState({
+    id: "",
+    isLoading: false,
+  });
 
   const navigate = useNavigate();
   const goToNextPage = (id) => {
@@ -24,9 +31,18 @@ const EmployeeList = () => {
 
   const deleteEmployee = (e, id) => {
     e.stopPropagation();
-    deleteEmployeeByID(id);
+    setDialogue({
+      id: id,
+      isLoading: true,
+    });
+    console.log(dialogue.id);
   };
 
+  const areYouSureDelete = (value) => {
+    setDialogue({
+      isLoading: value,
+    });
+  };
   const editEmployee = (e, id) => {
     e.stopPropagation();
     navigate(`/update/${id}`);
@@ -94,6 +110,14 @@ const EmployeeList = () => {
           </tbody>
         </table>
       </div>
+      {dialogue.isLoading && (
+        <DeleteDialogueBox
+          id={dialogue.id}
+          onDialogue={(value) => {
+            areYouSureDelete(value);
+          }}
+        />
+      )}
     </div>
   );
 };
