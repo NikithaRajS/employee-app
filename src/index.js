@@ -1,14 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+//import App from './App';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import reportWebVitals from "./reportWebVitals";
+import Login from "./pages/Login";
+import EmployeeList from "./pages/EmployeeList";
+import CreateEmployee from "./pages/CreateEmployee";
+import DemoPage from "./pages/DemoPage";
+import { Provider } from "react-redux";
+import { store } from "./store/Store";
+import EmployeeDetails from "./pages/EmployeeDetails";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <Provider store={store}>
+    <React.StrictMode>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/list" element={<EmployeeList />} />
+          <Route path="/create" element={<CreateEmployee />} />
+          <Route path="/counter" element={<DemoPage />} />
+          <Route path="/empdetails" element={<EmployeeDetails />} />
+        </Routes>
+      </BrowserRouter>
+      {/*<App />*/}
+    </React.StrictMode>
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
