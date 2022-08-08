@@ -7,44 +7,9 @@ import { BsPlusLg } from "react-icons/bs";
 import { useGetAllEmployeesQuery } from "../services/Api";
 
 const EmployeeList = () => {
-  //  const data = useGetAllEmployeesQuery();
-  //  const empArr=data.data;
-
-  const empArr = [
-    {
-      name: "Nikitha Raj",
-      id: "101",
-      joindate: "11/07/2022",
-      role: "Developer",
-      status: "Active",
-      exp: 2,
-    },
-    {
-      name: "Agnes",
-      id: "101",
-      joindate: "11/07/2022",
-      role: "Developer",
-      status: "Active",
-      exp: 2,
-    },
-    {
-      name: "Neena",
-      id: "101",
-      joindate: "11/07/2022",
-      role: "Developer",
-      status: "Active",
-      exp: 2,
-    },
-    {
-      name: "Nikitha",
-      id: "101",
-      joindate: "11/07/2022",
-      role: "Developer",
-      status: "Active",
-      exp: 2,
-    },
-  ];
-
+  
+  const {data} = useGetAllEmployeesQuery();
+  
   return (
     <div>
       <Header />
@@ -80,11 +45,11 @@ const EmployeeList = () => {
             </tr>
           </thead>
           <tbody>
-            {empArr.map((elem) => (
+            {data?.data.map((elem) => (
               <tr>
                 <td>{elem.name}</td>
                 <td>{elem.id}</td>
-                <td>{elem.joindate}</td>
+                <td>{elem.joining_date}</td>
                 <td>{elem.role}</td>
                 <td>
                   <div className="active">{elem.status}</div>
