@@ -2,7 +2,7 @@ import "../styles/styles.css";
 
 const CustomSelect = () => {
   return (
-    <div>
+    <div className="outercustomselect">
       <select className="customselect">
         <option value="0">Status</option>
         <option value="0">Role</option>
