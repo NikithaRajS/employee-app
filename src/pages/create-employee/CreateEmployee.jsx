@@ -8,7 +8,7 @@ import {
   useCreateEmployeeMutation,
   useGetEmployeeQuery,
   useUpdateEmployeeMutation,
-} from "../../services/Api";
+} from "./Api.js";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 

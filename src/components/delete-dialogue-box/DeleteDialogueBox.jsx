@@ -1,4 +1,4 @@
-import { useDeleteEmployeeMutation } from "../../services/Api";
+import { useDeleteEmployeeMutation } from "./Api.js";
 import "./styles.css";
 
 

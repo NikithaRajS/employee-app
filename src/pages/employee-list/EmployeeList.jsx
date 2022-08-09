@@ -4,7 +4,7 @@ import { FaRegTrashAlt } from "react-icons/fa";
 import { MdOutlineModeEditOutline } from "react-icons/md";
 import CustomSelect from "../../components/custom-select/CustomSelect";
 import { BsPlusLg } from "react-icons/bs";
-import { useGetAllEmployeesQuery } from "../../services/Api";
+import { useGetAllEmployeesQuery } from "./Api.js";
 import { useNavigate } from "react-router-dom";
 import DeleteDialogueBox from "../../components/delete-dialogue-box/DeleteDialogueBox";
 import { useState } from "react";
