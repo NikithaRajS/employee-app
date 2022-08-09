@@ -327,7 +327,6 @@ th {
 
 .customselect {
   background-color: #eaf9ff;
-
   border-color: #eaf9ff;
   border-radius: 50px;
   width: 70px;
@@ -475,10 +474,16 @@ hr {
 
 .greybutton {
   padding: 10px 20px;
-  color: #63667A;
+  color: #63667a;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #63667a29;
   border: 1px solid #63667a;
   border-radius: 3px;
   opacity: 1;
+}
+.logout {
+  margin-top: 280%;
+  margin-left: 20%;
+  margin-right: 20%;
+  
 }
