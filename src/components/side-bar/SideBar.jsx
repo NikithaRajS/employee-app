@@ -17,7 +17,7 @@ const SideBar = () => {
     <aside className="aside">
       <div className="tile">
         <div className="imagebg">
-          <img src={Icon} />
+          <img src={Icon} alt="icon" />
         </div>
         <a href=" " class="tile-text" onClick={() => goToList()}>
           Employee List

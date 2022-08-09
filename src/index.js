@@ -4,13 +4,13 @@ import "./index.css";
 //import App from './App';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
-import Login from "./pages/Login";
-import EmployeeList from "./pages/EmployeeList";
-import CreateEmployee from "./pages/CreateEmployee";
-import DemoPage from "./pages/DemoPage";
+import Login from "./pages/login/Login";
+import EmployeeList from "./pages/employee-list/EmployeeList";
+import CreateEmployee from "./pages/create-employee/CreateEmployee";
+
 import { Provider } from "react-redux";
 import { store } from "./store/Store";
-import EmployeeDetails from "./pages/EmployeeDetails";
+import EmployeeDetails from "./pages/employee-details/EmployeeDetails";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -21,7 +21,7 @@ root.render(
           <Route path="/" element={<Login />} />
           <Route path="/list" element={<EmployeeList />} />
           <Route path="/create" element={<CreateEmployee />} />
-          <Route path="/counter" element={<DemoPage />} />
+    
           <Route path="/list/:id" element={<EmployeeDetails />} />
           <Route path="/update/:id" element={<CreateEmployee/>} />
         </Routes>

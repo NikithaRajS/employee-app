@@ -1,14 +1,14 @@
-import InputField from "../components/input-field/InputField";
-import InputSelect from "../components/input-select/InputSelect";
-import "../styles/styles.css";
-import Header from "../components/header/Header";
-import SideBar from "../components/side-bar/SideBar";
+import InputField from "../../components/input-field/InputField";
+import InputSelect from "../../components/input-select/InputSelect";
+import "../../styles/styles.css";
+import Header from "../../components/header/Header";
+import SideBar from "../../components/side-bar/SideBar";
 import { useState, useEffect } from "react";
 import {
   useCreateEmployeeMutation,
   useGetEmployeeQuery,
   useUpdateEmployeeMutation,
-} from "../services/Api";
+} from "../../services/Api";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
@@ -27,10 +27,10 @@ const CreateEmployee = () => {
     if (result.isSuccess) {
       navigate(`/list`);
     }
-    if(rslt.isSuccess){
+    if (rslt.isSuccess) {
       navigate(`/list`);
     }
-  }, [result,rslt]);
+  }, [result, rslt]);
 
   useEffect(() => {
     if (employeeDetails?.data) {
@@ -46,8 +46,7 @@ const CreateEmployee = () => {
         city: employeeDetails?.data?.address.city,
         state: employeeDetails?.data?.address.state,
         zipcode: employeeDetails?.data?.address.zipcode,
-        username:employeeDetails?.data?.username,
-        
+        username: employeeDetails?.data?.username,
       });
     }
   }, [employeeDetails]);
@@ -64,8 +63,8 @@ const CreateEmployee = () => {
     city: "",
     state: "",
     zipcode: "",
-    username:"",
-    password:"",
+    username: "",
+    password: "",
   });
 
   const onChangeValue = (key, value) => {
@@ -76,11 +75,11 @@ const CreateEmployee = () => {
   };
 
   const onClickSubmit = () => {
-    let uname="user";
-    let pass="password";
-    if(state.role==="Admin"){
-      uname="Admin"
-      pass="admin"
+    let uname = "user";
+    let pass = "password";
+    if (state.role === "Admin") {
+      uname = "Admin";
+      pass = "admin";
     }
     const payload = {
       name: state.name,
@@ -100,7 +99,7 @@ const CreateEmployee = () => {
       departmentId: "5883e2f2-ee00-43b2-9797-1942a01c81d5",
     };
     if (id) {
-      updateEmp({id, payload} );
+      updateEmp({ id, payload });
     } else {
       createEmp(payload);
     }
@@ -127,9 +126,6 @@ const CreateEmployee = () => {
               onChange={(value) => onChangeValue("name", value)}
             />
           </div>
-
-        
-
           <div className="input-box">
             <InputField
               label="Joining Date"
@@ -172,7 +168,7 @@ const CreateEmployee = () => {
               placeholder="Experience"
               defaultvalue={state.experience}
               onChange={(value) => {
-                onChangeValue("experience", value)
+                onChangeValue("experience", value);
                 console.log(value);
               }}
             />
@@ -222,7 +218,6 @@ const CreateEmployee = () => {
               onChange={(value) => onChangeValue("zipcode", value)}
             />
           </div>
-         
 
           <div className="input-box">
             <span className="details">Upload ID Proof</span>

@@ -26,7 +26,6 @@ const LoginBox = () => {
       password: credentials.password,
     };
     login(payload);
-    
   };
 
   useEffect(() => {
@@ -38,7 +37,7 @@ const LoginBox = () => {
 
   return (
     <div className="loginbox">
-      <img src={Logo} height={45} width={208} />
+      <img src={Logo} height={45} width={208} alt="logo" />
       <input
         placeholder="Username"
         className="logininput logininput1"

@@ -1,10 +1,10 @@
-import Header from "../components/header/Header";
-import SideBar from "../components/side-bar/SideBar";
-import "../styles/styles.css";
+import Header from "../../components/header/Header";
+import SideBar from "../../components/side-bar/SideBar";
+import "../../styles/styles.css";
 import { MdOutlineModeEditOutline } from "react-icons/md";
-import DetailsBox from "../components/details-box/DetailsBox";
-import AddressDetailsBox from "../components/address-details/AddressDetailsBox";
-import {  useGetEmployeeQuery } from "../services/Api";
+import DetailsBox from "../../components/details-box/DetailsBox";
+import AddressDetailsBox from "../../components/address-details/AddressDetailsBox";
+import {  useGetEmployeeQuery } from "../../services/Api";
 import {useParams} from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 
