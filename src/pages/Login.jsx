@@ -1,6 +1,6 @@
 
 import LoginPic from "../assets/LoginPic.png"
-import LoginBox from "../components/LoginBox";
+import LoginBox from "../components/login-box/LoginBox";
 import '../styles/styles.css'
 
 const Login =()=>{

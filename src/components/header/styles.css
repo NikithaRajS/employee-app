@@ -1,0 +1,14 @@
+.header-logo {
+    display: flex;
+    width: 14%;
+    padding-left: 8px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    justify-content: center;
+    background-color: #e2e8fa 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+  header {
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }

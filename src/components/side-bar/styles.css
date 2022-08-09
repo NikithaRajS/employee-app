@@ -1,0 +1,68 @@
+.aside {
+  width: 14%;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 6px #00000029;
+}
+.tile {
+  position: relative;
+  margin: 30px 0px 10px 15px;
+  font-size: 15px;
+  background-color: #03aeee;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50px 0px 0px 50px;
+  line-height: 200%;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.imagebg {
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 3px;
+}
+
+div.imagebg > img {
+  max-height: 100%;
+  max-width: 100%;
+  padding: 5px;
+}
+
+.tile-text {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  padding-left: 5px;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 10px 8px;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 150px;
+  }
+  
+  .button1 {
+    background-color: #03aeee;
+  }
+
+  .logout {
+    margin-top: 280%;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+  }

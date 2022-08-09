@@ -1,0 +1,31 @@
+.loginbox {
+  display: flex;
+  flex-direction: column;
+  margin-top: 300px;
+}
+.logininput {
+  width: 460px;
+  height: 40px;
+  padding-left: 20px;
+  border: 1px solid #b4b7bd;
+  border-radius: 5px;
+}
+
+.logininput1 {
+  margin-top: 55px;
+}
+.logininput2 {
+  margin-top: 40px;
+}
+
+.loginbutton {
+  width: 460px;
+  height: 40px;
+  margin-top: 40px;
+  background-color: #03aeee;
+  color: #ffffff;
+  opacity: 1;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 0px 3px 6px #b0e6fa;
+}

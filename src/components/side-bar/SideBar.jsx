@@ -1,7 +1,7 @@
-import "../styles/styles.css";
-import Icon from "../assets/List.png";
+import "./styles.css";
+import Icon from "../../assets/List.png";
 import { useNavigate } from "react-router-dom";
-import { removeStorage } from "../services/Utils";
+import { removeStorage } from "../../services/Utils";
 
 const SideBar = () => {
   const navigate = useNavigate();

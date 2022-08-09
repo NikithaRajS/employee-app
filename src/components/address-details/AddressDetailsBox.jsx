@@ -1,4 +1,4 @@
-import "../styles/styles.css";
+import './styles.css'
 const AddressDetailsBox=({label,line1,line2,city,state,pincode})=>{
 
     return(

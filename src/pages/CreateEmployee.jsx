@@ -1,8 +1,8 @@
-import InputField from "../components/InputField";
-import InputSelect from "../components/InputSelect";
+import InputField from "../components/input-field/InputField";
+import InputSelect from "../components/input-select/InputSelect";
 import "../styles/styles.css";
-import Header from "../components/Header";
-import SideBar from "../components/SideBar";
+import Header from "../components/header/Header";
+import SideBar from "../components/side-bar/SideBar";
 import { useState, useEffect } from "react";
 import {
   useCreateEmployeeMutation,

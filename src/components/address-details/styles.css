@@ -1,0 +1,16 @@
+
+.address {
+    margin-right: 110px;
+  }
+
+.label {
+    font-size: 15px;
+    color: #8b8d9d;
+    margin-bottom: 15px;
+  }
+
+.value {
+    font-size: 14px;
+    color: #434552;
+    margin-bottom: 5px;
+  }

@@ -1,5 +1,5 @@
 
-import "../styles/styles.css";
+import "./styles.css";
 const DetailsBox=({label,value})=>{
     return(
         <div>

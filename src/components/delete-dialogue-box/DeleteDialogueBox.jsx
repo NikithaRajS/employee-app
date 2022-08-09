@@ -1,5 +1,5 @@
-import { useDeleteEmployeeMutation } from "../services/Api";
-import "../styles/styles.css";
+import { useDeleteEmployeeMutation } from "../../services/Api";
+import "./styles.css";
 
 
 const DeleteDialogueBox = ({ id, onDialogue }) => {

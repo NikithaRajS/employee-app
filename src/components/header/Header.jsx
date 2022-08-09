@@ -1,4 +1,5 @@
-import Logo from "../assets/kv logo.png"
+import Logo from "../../assets/KvLogo.png"
+import './styles.css'
 const Header = () => {
   return (
     <header >

@@ -1,8 +1,8 @@
-import Logo from "../assets/kv logo.png";
-import "../styles/styles.css";
+import Logo from "../../assets/KvLogo.png";
+import "./styles.css";
 import { useState, useEffect } from "react";
-import { useLoginEmployeeMutation } from "../services/Api";
-import { setStorage } from "../services/Utils.js";
+import { useLoginEmployeeMutation } from "../../services/Api";
+import { setStorage } from "../../services/Utils.js";
 import { useNavigate } from "react-router-dom";
 
 const LoginBox = () => {

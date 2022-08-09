@@ -1,15 +1,15 @@
-import Header from "../components/Header";
-import SideBar from "../components/SideBar";
+import Header from "../components/header/Header";
+import SideBar from "../components/side-bar/SideBar";
 import { FaRegTrashAlt } from "react-icons/fa";
 import { MdOutlineModeEditOutline } from "react-icons/md";
-import CustomSelect from "../components/CustomSelect";
+import CustomSelect from "../components/custom-select/CustomSelect";
 import { BsPlusLg } from "react-icons/bs";
 import {
   useDeleteEmployeeMutation,
   useGetAllEmployeesQuery,
 } from "../services/Api";
 import { Link, useNavigate } from "react-router-dom";
-import DeleteDialogueBox from "../components/DeleteDialogueBox";
+import DeleteDialogueBox from "../components/delete-dialogue-box/DeleteDialogueBox";
 import { useState } from "react";
 
 const EmployeeList = () => {

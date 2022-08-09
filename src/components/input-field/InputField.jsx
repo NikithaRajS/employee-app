@@ -1,4 +1,4 @@
-import '../styles/styles.css'
+import './styles.css'
 
 
 const InputField = ({ label, defaultvalue ,onChange,placeholder}) => {
